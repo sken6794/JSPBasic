@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>JSPBasic</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 서블릿을 등록하는 과정 -->
+  <servlet>
+  	<!-- 변수명 같은 느낌 -->
+  	<servlet-name>xxx</servlet-name>
+  	<!-- 해당 서블릿의 패키지명을 포함하여 경로를 작성 -->
+  	<servlet-class>com.demo.servlet.DemoServlet2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<!-- servlet name에 적은 변수명을 name태그안에 설정 -->
+  	<servlet-name>xxx</servlet-name>
+  	<!-- 연결하고자 하는 서블릿의 url패턴명을 작성 -->
+  	<url-pattern>/orange</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+</web-app>

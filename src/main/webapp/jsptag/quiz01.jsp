@@ -22,5 +22,12 @@
 <body>
 	오늘의 추천 로또 번호 <br>
 	<%=set.toString() %>
+	
+	<%for(int a : set){%>
+		<%=a %>
+	<%} %>
+	
+	
+	
 </body>
 </html>
