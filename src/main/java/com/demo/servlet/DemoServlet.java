@@ -19,9 +19,13 @@ public class DemoServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//컨텐츠 타입, 인코딩 타입 - response객체에서
+		resp.setContentType("text/html; plain; charset=UTF-8");
 		
 		PrintWriter out = resp.getWriter();
-		out.println("hello world");
+		
+		out.println("<b>헬로월드</b>");
+		
 	}
 
 	@Override
