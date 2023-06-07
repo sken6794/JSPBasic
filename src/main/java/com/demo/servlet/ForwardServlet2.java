@@ -21,6 +21,9 @@ public class ForwardServlet2 extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//post방식으로 보냈으니까 post 메소드 안에서 작업을 합니다
+		//받아 왔을때 인코딩 타입 세팅 해줬고
+		//디스패쳐 써서 파라미터에 담긴 id ,pw 그냥 그대로 다시 내보냅니다
 		request.setCharacterEncoding("utf-8");
 		//String id = request.getParameter("id");
 		//String pw = request.getParameter("pw");

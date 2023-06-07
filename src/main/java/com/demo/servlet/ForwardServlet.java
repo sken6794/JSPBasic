@@ -1,6 +1,7 @@
 package com.demo.servlet;
 
 import java.io.IOException;
+import java.util.Date;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,6 +22,14 @@ public class ForwardServlet extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		//3번 페이지에서 필요한 값을 request에 저장
+		request.setAttribute("name", "홍길동");
+		request.setAttribute("date", new Date());
+		
+		
+		
+		
 		//리다이렉트
 		//response.sendRedirect("actionTag/forward_ex02_ok.jsp");
 		
